@@ -1,0 +1,29 @@
+@import '@/styles/variables.scss';
+
+.product-card {
+	@include flex-column-gap(12px);
+
+	padding: 24px;
+	border: 1px solid $color-basic-black;
+	border-radius: 8px;
+
+	&__info {
+		@include flex-column-gap(8px);
+
+		flex-grow: 1;
+		align-items: center;
+	}
+	&__image {
+		width: 200px;
+		height: 200px;
+
+		object-fit: cover;
+		border: 1px solid $color-basic-black;
+		border-radius: 8px;
+	}
+	&-title {
+		color: $color-basic-black;
+		font-size: $font-size-18;
+		font-weight: $font-weight-semibold;
+	}
+}

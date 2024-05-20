@@ -1,0 +1,11 @@
+@import '@/styles/variables.scss';
+
+.label-layout {
+	@include flex-column-gap(6px);
+
+	&-label {
+		color: $color-basic-black;
+		font-size: $font-size-14;
+		font-weight: $font-weight-medium;
+	}
+}

@@ -1,0 +1,15 @@
+@import '@/styles/variables.scss';
+
+.primary {
+	@include common-button($color-primary);
+}
+
+.success {
+	@include common-button($color-primary-success);
+}
+.update {
+	@include common-button($color-primary-update);
+}
+.error {
+	@include common-button($color-primary-error);
+}

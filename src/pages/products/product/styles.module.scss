@@ -1,0 +1,36 @@
+@import '@/styles/variables.scss';
+
+.product-page {
+	@include full-width-height;
+
+	display: flex;
+	gap: 18px;
+
+	&__product {
+		@include flex-column-gap(28px);
+
+		flex-basis: 50%;
+		&-info {
+			@include flex-column-gap(12px);
+		}
+		&-parameter {
+			color: $color-basic-black;
+			font-size: $font-size-18;
+			font-weight: $font-weight-semibold;
+		}
+	}
+	&__image {
+		width: 500px;
+		height: 500px;
+
+		border: 1px solid $color-basic-black;
+		border-radius: 8px;
+	}
+	&__button-wrapper {
+		display: flex;
+		gap: 28px;
+	}
+	&__comments {
+		flex-basis: 50%;
+	}
+}

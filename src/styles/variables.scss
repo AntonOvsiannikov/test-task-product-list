@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700');
+
+// === Mixins ===
+
+@mixin font-inter {
+	font-family: 'Inter', sans-serif;
+}
+
+@mixin full-width-height {
+	width: 100%;
+	height: 100%;
+}
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin flex-content-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+@mixin flex-column-gap($gap) {
+	@include flex-column;
+	gap: $gap;
+}
+
+@mixin reset-button {
+	outline: none;
+	border: none;
+	background: none;
+}
+
+@mixin common-button($color) {
+	@include reset-button;
+	@include flex-center;
+
+	gap: 8px;
+
+	padding: 10px 16px;
+	background: $color;
+	border: 1px solid $color-basic-black;
+	border-radius: 8px;
+
+	color: $color-basic-black;
+	font-size: $font-size-16;
+	font-weight: $font-weight-semibold;
+	line-height: 20px;
+	cursor: pointer;
+
+	&:hover {
+		background: hsl(from $color h s calc(l + 0.1));
+		color: hsl(from $color-basic-black h s calc(l + 0.1));
+		border-color: hsl(from $color-basic-black h s calc(l + 0.1));
+	}
+	&:active {
+		background: $color;
+		color: $color-basic-black;
+		border-color: $color-basic-black;
+	}
+}
+@mixin common-input {
+	width: 100%;
+
+	padding: 10px 14px;
+
+	border: 1px solid $color-basic-black;
+	border-radius: 8px;
+
+	color: $color-basic-black;
+
+	&::placeholder {
+		font-size: $font-size-16;
+		font-weight: $font-weight-regular;
+	}
+}
+
+// === / Mixins ===
+
+// === Variables ===
+
+$color-basic-white: #ffffff;
+$color-basic-black: #000000;
+
+$color-primary: #afa0ff;
+$color-primary-success: #90ee90;
+$color-primary-update: #ccff00;
+$color-primary-error: #f63d68;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-24: 24px;
+$font-size-30: 30px;
+$font-size-36: 36px;
+$font-size-48: 48px;
+
+$screen-xs-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
+
+// === / Variables ===

@@ -1,0 +1,7 @@
+@import '@/styles/variables.scss';
+
+.base-layout {
+	@include full-width-height;
+
+	background: $color-basic-white;
+}

@@ -1,0 +1,59 @@
+{
+  "products-list": [
+    {
+      "id": 1716157441656,
+      "imageUrl": "",
+      "name": "Milk",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g",
+      "comments": [
+        {
+          "id": 1716157441666,
+          "productId": 1716157441656,
+          "description": "some text here",
+          "date": "14:00 22.08.2021"
+        }
+      ]
+    },
+    {
+      "id": 1716157441657,
+      "imageUrl": "",
+      "name": "Water",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g",
+      "comments": []
+    },
+    {
+      "id": 1716157441658,
+      "imageUrl": "",
+      "name": "Breed",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g",
+      "comments": []
+    },
+    {
+      "id": 1716238189302,
+      "imageUrl": "https://img.freepik.com/free-photo/beautiful-seaside-landscape_23-2150423932.jpg",
+      "name": "132",
+      "count": 321,
+      "size": {
+        "width": 123,
+        "height": 321
+      },
+      "weight": "123",
+      "comments": []
+    }
+  ]
+}

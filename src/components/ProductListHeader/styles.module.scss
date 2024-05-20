@@ -1,0 +1,12 @@
+@import '@/styles/variables.scss';
+
+.product-list-header {
+	@include flex-center;
+
+	gap: 12px;
+
+	@media (max-width: $screen-sm-max) {
+		flex-direction: column;
+		align-items: unset;
+	}
+}

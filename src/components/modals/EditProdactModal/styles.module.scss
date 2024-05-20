@@ -1,0 +1,9 @@
+@import '@/styles/variables.scss';
+
+.change-modal {
+	@include flex-column-gap(28px);
+
+	&__text {
+		text-align: center;
+	}
+}

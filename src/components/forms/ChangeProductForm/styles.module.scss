@@ -1,0 +1,21 @@
+@import '@/styles/variables.scss';
+
+.change-product-form {
+	@include flex-column-gap(28px);
+
+	&__field {
+		@include common-input;
+	}
+	&__wrapper {
+		@include flex-column-gap(12px);
+	}
+	&__button-wrapper {
+		@include flex-center;
+		gap: 28px;
+	}
+
+	&__error-message {
+		color: red;
+		font-size: $font-size-12;
+	}
+}

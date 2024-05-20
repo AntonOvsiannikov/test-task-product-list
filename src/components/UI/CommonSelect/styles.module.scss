@@ -1,0 +1,11 @@
+@import '@/styles/variables.scss';
+
+.common-select {
+	padding: 10px 14px;
+
+	border: 1px solid $color-basic-black;
+	border-radius: 8px;
+	cursor: pointer;
+
+	color: $color-basic-black;
+}
